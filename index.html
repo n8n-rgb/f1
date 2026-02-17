@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Hamilton | Off The Track</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/F1-logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="header">
+        <a href="#hero" class="logo">
+            <span class="logo-text">LH</span><span class="logo-num">44</span>
+        </a>
+        <nav class="top-nav">
+            <div class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                <span class="toggle-icon">☀</span>
+            </div>
+            <div class="menu-item" id="chapter-btn">CHAPTER <span class="arrow-down">⌄</span></div>
+            <div class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Dropdown Menu -->
+        <div class="chapter-menu" id="chapter-menu">
+            <a href="#stats">STATS</a>
+            <a href="#secondary-hero">BEYOND</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#quote">LEGACY</a>
+        </div>
+
+        <!-- Mobile Full Overlay Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#hero" class="mobile-link">HOME</a>
+            <a href="#stats" class="mobile-link">STATS</a>
+            <a href="#secondary-hero" class="mobile-link">BEYOND LIMITS</a>
+            <a href="#gallery" class="mobile-link">GALLERY</a>
+            <a href="#quote" class="mobile-link">LEGACY</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid-overlay"></div>
+        <canvas id="hero-sequence" class="hero-bg"></canvas>
+
+        <div class="hero-content">
+            <h1 class="hero-headline reveal">
+                A DESIRE <br> <span class="outline-text">FOR SPEED</span>
+            </h1>
+            <div class="scroll-indicator reveal" style="transition-delay: 0.4s">
+                SCROLL TO EXPLORE
+            </div>
+        </div>
+
+        <a href="#stats" class="floating-cta">
+            <span class="cta-icon">+</span> KNOW THE DRIVER
+        </a>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <h3 class="counter" data-target="7">0</h3>
+                <p>World Titles</p>
+            </div>
+            <div class="stat-item reveal" style="transition-delay: 0.1s">
+                <h3 class="counter" data-target="103">0</h3>
+                <p>Race Wins</p>
+            </div>
+            <div class="stat-item reveal" style="transition-delay: 0.2s">
+                <h3 class="counter" data-target="104">0</h3>
+                <p>Pole Positions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary Hero / 3rd Section -->
+    <section id="secondary-hero" class="secondary-hero reveal">
+        <canvas id="secondary-sequence" class="secondary-bg"></canvas>
+        <div class="secondary-content">
+            <h2>BEYOND THE LIMIT</h2>
+            <p>Pushing the boundaries of what is possible, every single lap.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-grid">
+            <!-- Item 1: Original Helmet -->
+            <div class="gallery-item reveal">
+                <img src="assets/gallery/hf_20260217_044145_83dcba32-c167-45e5-86f0-787a0e273be5.png"
+                    alt="Helmet Focus">
+                <div class="gallery-overlay">
+                    <h4>FOCUS</h4>
+                </div>
+            </div>
+
+            <!-- Item 2: Original Passion -->
+            <div class="gallery-item reveal" style="transition-delay: 0.1s">
+                <img src="assets/gallery/hf_20260217_044243_994c5707-d19e-48a3-a456-4795f70941c5.png" alt="Passion">
+                <div class="gallery-overlay">
+                    <h4>PASSION</h4>
+                </div>
+            </div>
+
+            <!-- Item 3: Original Drive -->
+            <div class="gallery-item reveal" style="transition-delay: 0.2s">
+                <img src="assets/gallery/hf_20260217_044340_ed8825ec-cbfd-4d61-8eca-b59dda3fd76d.jpeg" alt="Drive">
+                <div class="gallery-overlay">
+                    <h4>DRIVE</h4>
+                </div>
+            </div>
+
+            <!-- Item 4: Original Vision -->
+            <div class="gallery-item reveal" style="transition-delay: 0.3s">
+                <img src="assets/gallery/hf_20260217_044959_1a4de886-af63-489c-b935-250f5ce64a71.png" alt="Vision">
+                <div class="gallery-overlay">
+                    <h4>VISION</h4>
+                </div>
+            </div>
+
+            <!-- Item 5: New Portrait (Replacing the removed image) -->
+            <div class="gallery-item reveal" style="transition-delay: 0.4s">
+                <img src="assets/gallery/lewis_portrait_gen.png" alt="The Champion">
+                <div class="gallery-overlay">
+                    <h4>ICON</h4>
+                </div>
+            </div>
+
+            <!-- Item 6: New Racing Car (Completing the set) -->
+            <div class="gallery-item reveal" style="transition-delay: 0.5s">
+                <img src="assets/gallery/lewis_car_gen.png" alt="Speed">
+                <div class="gallery-overlay">
+                    <h4>SPEED</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote reveal">
+        <blockquote>
+            "STILL WE RISE."
+        </blockquote>
+        <cite>- Lewis Hamilton</cite>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tribute Page. inspired by CharlesLeclerc.com style.</p>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
